@@ -8,6 +8,7 @@
             body {
     background-color: grey;
     font-family: Verdana, sans-serif;
+    
 }
 #taskbar {
     background-color: #ffffff;
@@ -26,10 +27,20 @@
         </style>
     </head>
     <body>
-       
+       <center>
         <div id="taskbar">
-            <div onclick="toggletools('start-menu')" style="color:white; padding-left: 5px; font-size: 20px;">
-              Launcher
+            <div onclick="toggletools('start-menu')" style="color:rgb(0, 0, 0); padding-left: 5px; font-size: 20px;">
+             
+                Launcher
+
             </div> 
+            </div>
+            <script>
+                $(function() {
+  $('.taskbar).click(function() {
+    $(this).toggleClass('open');
+  });
+});
+            </script>
     </body>
 </html>
